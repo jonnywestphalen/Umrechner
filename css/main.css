@@ -1,0 +1,34 @@
+h1{
+    display: flex;
+    justify-content: center;/*Zentrierung der Überschrift*/
+}
+.allgemein{
+    display: flex;
+    justify-content: center;
+    align-items: center;/*Zentrierung der Elemente*/
+}/*Anordnung der Felder*/
+.eingabefeld{
+    display: flex;
+    flex-direction: column;/*Text unter Eingabefeld*/
+    margin: 0 16px;/* Abstand der Elemente*/
+    border: 1px solid gray;/* Rahmen*/
+    max-width: 30%;/*maximale Breite (30% des Behälterelements)*/
+}
+.allgemein input{
+    border: none;/* standardrahmen entfernen*/
+    border-bottom: 1px solid gray;/* Trennungslinie*/
+}
+
+.allgemein input:focus{
+    outline: none;/* Umrahmung bei Auswählung entfernen*/
+}
+.allgemein input,
+.allgemein label {
+    padding: 0.5em; /*Abstand zwischen Inhalt und Rahmen (entspricht 0.5*Schriftgröße)*/
+    text-align: center; /* Schrift in Feld zentrieren*/
+}
+.allgemein */*Auswahl aller Elemente in umrechner-div*/ {
+    font-family: "Arial", sans-serif;/* Schriftart*/
+    font-size: 1.5rem;/* Schriftgröße (1.5*Browser-Standardschriftgröße)*/
+
+}
